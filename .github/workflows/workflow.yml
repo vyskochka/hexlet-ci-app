@@ -11,4 +11,8 @@ jobs:
           cache: npm
       - run: make setup
       - run: make test
+        with:
+          uses: actions/upload-artifact@v3
       - run: make lint
+        with:
+          uses: actions/upload-artifact@v3
